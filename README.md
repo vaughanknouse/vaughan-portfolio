@@ -11,7 +11,7 @@ A portfolio built with HTML, CSS, and Bootstrap showcasing my work as a Full-Sta
 - [Technologies Used \*\*\*](#technologies-used-)
 - [Features \*\*\*](#features-)
   - [Screenshots \*\*\*](#screenshots-)
-- [Links \*\*\*](#links-)
+- [Links](#links)
 - [Credits](#credits)
 - [License](#license)
 - [Questions](#questions)
@@ -35,11 +35,11 @@ The following screenshot demonstrates the application's functionality and appear
 
 ![Image of Vaughan Knouse's portfolio.](assets/images/user-portfolio-screenshot.png)
 
-## Links \*\*\*
+## Links
 
 GitHub Repository: <https://github.com/vaughanknouse/Vaughan-portfolio>
 
-Deployed Application Link: \*\*\*
+Deployed Application Link: <https://vaughanknouse.github.io/Vaughan-portfolio/>
 
 ## Credits
 
