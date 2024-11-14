@@ -2,30 +2,32 @@
 
 ![License](https://img.shields.io/badge/License-MIT-blue.svg)
 
-## Description <!-- omit in toc -->
+## Description \*\*\* <!-- omit in toc -->
 
 A portfolio built with HTML, CSS, and Bootstrap showcasing my work as a Full-Stack Web Developer, featuring projects built with modern web technologies, a responsive design, and a user-friendly interface.
 
 ## Table of Contents <!-- omit in toc -->
 
-- [Technologies Used](#technologies-used)
-- [Features](#features)
-  - [Screenshots](#screenshots)
-- [Links](#links)
+- [Technologies Used \*\*\*](#technologies-used-)
+- [Features \*\*\*](#features-)
+  - [Screenshots \*\*\*](#screenshots-)
+- [Links \*\*\*](#links-)
 - [Credits](#credits)
 - [License](#license)
 - [Questions](#questions)
 
-## Technologies Used
+## Technologies Used \*\*\*
 
 - HTML
 - CSS
 - Bootstrap
 - Font Awesome
 
-## Features
+## Features \*\*\*
 
-### Screenshots
+---
+
+### Screenshots \*\*\*
 
 The following screenshot demonstrates the application's functionality and appearance:
 
@@ -33,7 +35,7 @@ The following screenshot demonstrates the application's functionality and appear
 
 ![Image of Vaughan Knouse's portfolio.](assets/images/user-portfolio-screenshot.png)
 
-## Links
+## Links \*\*\*
 
 GitHub Repository: <https://github.com/vaughanknouse/Vaughan-portfolio>
 
