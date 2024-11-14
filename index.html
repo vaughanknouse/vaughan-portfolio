@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vaughan Knouse Portfolio</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./assets/images/vk-favicon.ico" />
+    <!-- Bootstrap 5.3.3 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous" />
+    <!-- FontAwesome Icons -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <!-- 'navbar-light' for light text color on a light background, 'bg-light' for light background color -->
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="./assets/images/vk-favicon.ico"
+            alt="Logo"
+            width="30"
+            height="30"
+            class="d-inline-block align-text-top" />
+          Vaughan Knouse
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <!-- Navigation Menu -->
+          <ul class="navbar-nav ms-auto">
+            <!-- 'ms-auto' class to align the navigation to the right -->
+            <li class="nav-item">
+              <a class="nav-link" href="#home"
+                ><i class="fas fa-home"></i> Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about"
+                ><i class="fas fa-user"></i> About Me</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio"
+                ><i class="fas fa-briefcase"></i> Portfolio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#resume"
+                ><i class="fas fa-file-alt"></i> Resume</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact"
+                ><i class="fas fa-envelope"></i> Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="jumbotron text-center">
+      <div class="container">
+        <!-- 'jumbotron' for large padding and 'text-center' for center-aligned text -->
+        <h1 class="jumbotron-heading">
+          Hello, I'm<br />
+          <span class="text-primary display-4"
+            ><strong>Vaughan Knouse</strong></span
+          >
+        </h1>
+        <h2 class="lead">Full-Stack Web Developer</h2>
+        <p class="lead text-muted">
+          Welcome to my portfolio! Explore my work, learn more about me, or get
+          in touch. I'd love to collaborate!
+        </p>
+        <!-- 'lead' class for larger, bolder text and 'text-muted' for muted color -->
+        <p>
+          <!-- Bootstrap button styles -->
+          <a href="#resume" class="btn btn-primary my-2">View Resume</a>
+          <!-- 'btn-primary' for blue button and 'my-2' for vertical margin -->
+          <a href="#contact" class="btn btn-secondary my-2">Contact Me</a>
+          <!-- 'btn-secondary' for grey button -->
+        </p>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <!-- Column with 4/12 width in medium screens -->
+          <img
+            src="./assets/images/VK-image.jpeg"
+            alt="Vaughan Image"
+            class="img-fluid rounded-circle" />
+          <!-- 'img-fluid' for responsive image and 'rounded-circle' for circular image -->
+        </div>
+        <div class="col-md-8">
+          <!-- Column with 8/12 width in medium screens -->
+          <h2>About Me</h2>
+          <p>
+            Welcome to my page! I am a full-stack web developer based in
+            Washington, DC, with over 10 years of experience in healthcare
+            operations. My journey in the tech world began after years of
+            working in healthcare, where I developed a passion for improving
+            workflows and patient care through technology.
+          </p>
+          <p>
+            I earned a Full-Stack Web Development certificate from The
+            University of Texas at Austin Coding Boot Camp, where I honed my
+            skills in the MERN stack (MongoDB, Express.js, React.js, Node.js),
+            SQL, and responsive web design. With a strong foundation in
+            front-end and back-end development, I focus on creating
+            user-friendly applications that streamline processes and enhance
+            experiences.
+          </p>
+          <p>
+            Before transitioning into software development, I worked in various
+            healthcare roles, including clinical work as an emergency department
+            medical scribe, research assistant at the NIH's National Cancer
+            Institute, and as part of the administrative team at the NIH's
+            Center for Scientific Review. This diverse experience has given me
+            valuable insight into the unique challenges of the healthcare field
+            and drives my desire to leverage technology to make a meaningful
+            impact.
+          </p>
+          <p>
+            I'm passionate about continuing to learn and grow, and I'm excited
+            about applying my skills to create innovative solutions that improve
+            the healthcare industry. Whether working independently or as part of
+            a team, I bring a collaborative mindset, strong problem-solving
+            skills, and a commitment to delivering high-quality solutions in
+            fast-paced environments.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="bg-light py-5">
+      <div class="container">
+        <!-- 'bg-light' for light background color and 'py-5' for vertical padding -->
+        <h2 class="text-center">Portfolio</h2>
+        <div class="row">
+          <!-- Project 1 Card -->
+          <div class="col-md-4 col-sm-6">
+            <div class="card mb-4 shadow-sm">
+              <!-- 'card' for card component, 'mb-4' for bottom margin, and 'shadow-sm' for small shadow -->
+              <img
+                src="./assets/images/gitfit.png"
+                class="card-img-top"
+                alt="GitFit Image" />
+              <div class="card-body">
+                <h5 class="card-title">GitFit</h5>
+                <p class="card-text">
+                  A full-stack user-friendly and responsive fitness application
+                  built using the MERN stack in collaboration with 3 other
+                  full-stack web developers that allows users to search for,
+                  customize, and save their workout routines, providing a
+                  seamless way to create and track personalized fitness plans.
+                </p>
+                <p>
+                  <strong>Technologies Used:</strong> HTML, CSS, JavaScript,
+                  MongoDB, Express.js, React.js, Node.js, GraphQL
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a
+                      href="https://github.com/cococnde/git-fit"
+                      class="btn btn-sm btn-outline-secondary"
+                      target="_blank"
+                      >GitHub Repo</a
+                    >
+                    <a
+                      href="https://git-fit-2.onrender.com"
+                      class="btn btn-sm btn-outline-secondary"
+                      target="_blank"
+                      >Deployed Link</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Project 2 Card -->
+          <div class="col-md-4 col-sm-6">
+            <div class="card mb-4 shadow-sm">
+              <!-- 'card' for card component, 'mb-4' for bottom margin, and 'shadow-sm' for small shadow -->
+              <img
+                src="./assets/images/MVC-Tech-Blog-Homepage-image.png"
+                class="card-img-top"
+                alt="MVC Tech Blog Image" />
+              <div class="card-body">
+                <h5 class="card-title">MVC Tech Blog</h5>
+                <p class="card-text">
+                  A CMS-style platform designed for developers to create, edit,
+                  and comment on blog posts, structured around the
+                  Model-View-Controller (MVC) architecture with built-in
+                  authentication.
+                </p>
+                <p>
+                  <strong>Technologies Used:</strong> Handlebars.js, Sequelize,
+                  PostgreSQL, Express.js, Node.js
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a
+                      href="https://github.com/vaughanknouse/MVC-Tech-Blog"
+                      class="btn btn-sm btn-outline-secondary"
+                      target="_blank"
+                      >GitHub Repo</a
+                    >
+                    <a
+                      href="https://mvc-tech-blog-hlde.onrender.com/"
+                      class="btn btn-sm btn-outline-secondary"
+                      target="_blank"
+                      >Deployed Link</a
+                    >
+                    <!-- 'btn-outline-secondary' for bordered grey button and 'btn-sm' for small button -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Project 3 Card -->
+          <div class="col-md-4 col-sm-6">
+            <div class="card mb-4 shadow-sm">
+              <!-- 'card' for card component, 'mb-4' for bottom margin, and 'shadow-sm' for small shadow -->
+              <img
+                src="./assets/images/weather-dashboard-image.png"
+                class="card-img-top"
+                alt="Server Side API Weather Dashboard Image" />
+              <div class="card-body">
+                <h5 class="card-title">Server-Side API: Weather Dashboard</h5>
+                <p class="card-text">
+                  A dynamic weather dashboard web application that allows users
+                  to search for cities and view current and 5-day weather
+                  forecasts, leveraging the OpenWeather third-party API as well
+                  as localStorage for persistent data.
+                </p>
+                <p>
+                  <strong>Technologies Used:</strong> HTML, CSS, JavaScript,
+                  OpenWeather API, localStorage
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a
+                      href="https://github.com/vaughanknouse/weather-dashboard-server-side-api"
+                      class="btn btn-sm btn-outline-secondary"
+                      target="_blank"
+                      >GitHub Repo</a
+                    >
+                    <a
+                      href="https://vaughanknouse.github.io/weather-dashboard-server-side-api/"
+                      class="btn btn-sm btn-outline-secondary"
+                      target="_blank"
+                      >Deployed Link</a
+                    >
+                    <!-- 'btn-outline-secondary' for bordered grey button and 'btn-sm' for small button -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Project 4 Card -->
+          <div class="col-md-4 col-sm-6">
+            <div class="card mb-4 shadow-sm">
+              <!-- 'card' for card component, 'mb-4' for bottom margin, and 'shadow-sm' for small shadow -->
+              <img
+                src="./assets/images/Web-API-personal-blog-light-image.png"
+                class="card-img-top"
+                alt="Web API Personal Blog Image" />
+              <div class="card-body">
+                <h5 class="card-title">Web API: Personal Blog</h5>
+                <p class="card-text">
+                  A dynamic two-page personal blog web application that allows
+                  users to create, store, and view blog posts with light/dark
+                  mode toggle functionality, showcasing practical JavaScript,
+                  HTML, CSS, and localStorage usage.
+                </p>
+                <p>
+                  <strong>Technologies Used:</strong> HTML, CSS, JavaScript,
+                  localStorage
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a
+                      href="https://github.com/vaughanknouse/web-apis-personal-blog"
+                      class="btn btn-sm btn-outline-secondary"
+                      target="_blank"
+                      >GitHub Repo</a
+                    >
+                    <a
+                      href="https://vaughanknouse.github.io/web-apis-personal-blog/"
+                      class="btn btn-sm btn-outline-secondary"
+                      target="_blank"
+                      >Deployed Link</a
+                    >
+                    <!-- 'btn-outline-secondary' for bordered grey button and 'btn-sm' for small button -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Project 5 Card -->
+          <div class="col-md-4 col-sm-6">
+            <div class="card mb-4 shadow-sm">
+              <!-- 'card' for card component, 'mb-4' for bottom margin, and 'shadow-sm' for small shadow -->
+              <img
+                src="./assets/images/SQL-employee-tracker-gif.gif"
+                class="card-img-top"
+                alt="SQL Employee Tracker GIF" />
+              <div class="card-body">
+                <h5 class="card-title">SQL: Employee Tracker</h5>
+                <p class="card-text">
+                  A command-line application that enables business owners to
+                  manage and organize employee data, including departments,
+                  roles, and employee details.
+                </p>
+                <p>
+                  <strong>Technologies Used:</strong> Node.js, Inquirer,
+                  PostgreSQL, JavaScript
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a
+                      href="https://github.com/vaughanknouse/SQL-employee-tracker"
+                      class="btn btn-sm btn-outline-secondary"
+                      target="_blank"
+                      >GitHub Repo</a
+                    >
+                    <a
+                      href=" https://drive.google.com/file/d/1oaf3nUSd0Oe6NN6vLHEg9JHLhRNQaWzq/view?usp=sharing"
+                      class="btn btn-sm btn-outline-secondary"
+                      target="_blank"
+                      >Deployed Link</a
+                    >
+                    <!-- 'btn-outline-secondary' for bordered grey button and 'btn-sm' for small button -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Project 6 Card -->
+          <div class="col-md-4 col-sm-6">
+            <div class="card mb-4 shadow-sm">
+              <!-- 'card' for card component, 'mb-4' for bottom margin, and 'shadow-sm' for small shadow -->
+              <img
+                src="./assets/images/Social-Network-API-gif.gif"
+                class="card-img-top"
+                alt="Social Network API GIF" />
+              <div class="card-body">
+                <h5 class="card-title">Social Network API</h5>
+                <p class="card-text">
+                  A backend API for a social media platform where users can
+                  share thoughts, react to friends' posts, and manage
+                  friendships."
+                </p>
+                <p>
+                  <strong>Technologies Used:</strong> Node.js, Express.js,
+                  MongoDB, Mongoose, Insomnia
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a
+                      href="https://github.com/vaughanknouse/Social-Network-API"
+                      class="btn btn-sm btn-outline-secondary"
+                      target="_blank"
+                      >GitHub Repo</a
+                    >
+                    <a
+                      href="https://drive.google.com/file/d/105pVmlPufGvbNxV1hqa1WR7tMHdrwhUx/view?usp=sharing"
+                      class="btn btn-sm btn-outline-secondary"
+                      target="_blank"
+                      >Deployed Link</a
+                    >
+                    <!-- 'btn-outline-secondary' for bordered grey button and 'btn-sm' for small button -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="bg-light py-5">
+      <div class="container text-center">
+        <h2>Resume</h2>
+        <p>
+          Download my resume for a detailed view of my experience and skills.
+        </p>
+        <!-- 'bg-light' for light background and 'text-center' to center-align text -->
+        <!-- Resume Download Button -->
+        <a href="./assets/documents/vk-resume.pdf" class="btn btn-primary"
+          >Download Resume</a
+        >
+        <!-- 'btn-primary' for blue button -->
+      </div>
+      <div class="container py-5">
+        <h3 class="text-center">Skills</h3>
+        <div class="row">
+          <!-- Front-End Skills Column -->
+          <div class="col-md-3 border">
+            <h4>Front-End Skills</h4>
+            <ul class="list-unstyled">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>React.js</li>
+              <li>Handlebars.js</li>
+              <li>Responsive Web Design</li>
+            </ul>
+          </div>
+          <!-- Back-End Skills Column -->
+          <div class="col-md-3 border">
+            <h4>Back-End Skills</h4>
+            <ul class="list-unstyled">
+              <li>Node.js</li>
+              <li>Express.js</li>
+              <li>GraphQL</li>
+              <li>MongoDB</li>
+              <li>Sequelize</li>
+              <li>Mongoose</li>
+              <li>PostgreSQL</li>
+              <li>RESTful APIs</li>
+              <li>OpenWeather API</li>
+            </ul>
+          </div>
+          <!-- Tools & Platform Skills Column -->
+          <div class="col-md-3 border">
+            <h4>Tools & Platform Skills</h4>
+            <ul class="list-unstyled">
+              <li>Version Control/Git</li>
+              <li>GitHub</li>
+              <li>Chrome DevTools</li>
+              <li>Visual Studio (VS) Code</li>
+              <li>Insomnia</li>
+              <li>Render</li>
+              <li>JWT</li>
+            </ul>
+          </div>
+          <!-- Software Skills Column -->
+          <div class="col-md-3 border">
+            <h4>Software Skills</h4>
+            <ul class="list-unstyled">
+              <li>EMR Systems: Epic, CRIS, PACS</li>
+              <li>Microsoft Office Suite</li>
+              <li>SharePoint</li>
+              <li>IMPAC</li>
+              <li>NIDAP</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+      <div class="container">
+        <h2 class="text-center">Contact Me</h2>
+        <!-- 'py-5' for vertical padding -->
+        <div class="row">
+          <div class="col-md-6">
+            <h4><strong>Get in Touch</strong></h4>
+            <p>
+              Please feel free to contact me at
+              <a href="mailto:vaughanknouse@gmail.com"
+                >vaughanknouse@gmail.com</a
+              >
+              if you have any questions or comments.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <!-- Contact Form -->
+            <form>
+              <div class="row g-3">
+                <div class="col-md-12">
+                  <label for="name" class="form-label">Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="Name" />
+                  <!-- 'form-control' for Bootstrap form styling -->
+                </div>
+                <div class="col-md-12">
+                  <label for="email" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="Email" />
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  placeholder="Message"
+                  rows="3"></textarea>
+                <!-- 'form-control' for Bootstrap form styling -->
+              </div>
+              <button type="submit" class="btn btn-primary">Send</button>
+              <!-- 'btn-primary' for blue button -->
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-4">
+      <!-- 'text-center' to center-align text and 'py-4' for vertical padding -->
+      <p>
+        &copy; <span id="current-year"></span> Vaughan Knouse. All rights
+        reserved.
+      </p>
+      <ul class="list-inline">
+        <!-- 'list-inline' and 'list-inline-item' to display links horizontally -->
+        <li class="list-inline-item">
+          <a href="https://github.com/vaughanknouse" target="_blank">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a href="https://www.linkedin.com/in/vaughanknouse/" target="_blank">
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a
+            href="https://stackoverflow.com/users/25171022/vaughan-knouse"
+            target="_blank">
+            <i class="fab fa-stack-overflow"></i> Stack Overflow
+          </a>
+        </li>
+      </ul>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"></script>
+    <script>
+      // Set the current year in the footer
+      document.getElementById('current-year').textContent =
+        new Date().getFullYear();
+    </script>
+  </body>
+</html>

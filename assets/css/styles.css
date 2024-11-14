@@ -1,0 +1,223 @@
+/* General Styles */
+:root {
+  --primary-color: #4a90e2; /* A medium blue for contrast */
+  --text-color: #333; /* Dark text for better readability */
+  --bg-color: #ffffff; /* Light background for the entire page */
+  --section-bg-color-light: #f8f9fa; /* Light background for sections */
+  --section-bg-color-dark: #e9ecef; /* Slightly darker background for sections */
+  --form-bg-color: #ffffff; /* Light background for form elements */
+  --border-color: #ddd; /* Light border color */
+  --shadow-color: rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Global styles */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Section Styling */
+section {
+  padding: 4rem 0;
+  background-color: var(--section-bg-color-light);
+  color: var(--text-color);
+  border-bottom: 1px solid var(--border-color); /* Adds separation between sections */
+}
+
+/* Header */
+header {
+  background-color: var(
+    --primary-color
+  ); /* Set the header background to blue */
+  color: var(--text-color);
+  padding: 2rem 0;
+  text-align: center;
+}
+
+/* Specific Section Backgrounds */
+#portfolio,
+#contact,
+#resume {
+  background-color: var(--section-bg-color-dark);
+}
+
+#hero {
+  background: linear-gradient(to bottom, #ffffff, var(--primary-color));
+  text-align: center;
+  border-bottom: 2px solid var(--primary-color); /* Distinct separator for Hero */
+  padding: 4rem 1rem; /* Ensure it scales well on smaller devices */
+}
+
+section h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* Make sure active state is applied properly */
+.navbar-nav .nav-link.active {
+  font-weight: bold;
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--primary-color); /* On hover, text becomes blue */
+  transform: scale(1.1); /* Smooth scaling effect */
+}
+
+/* Optional: To ensure the active link stands out */
+.navbar-nav .nav-link.active {
+  font-weight: bold;
+  border-bottom: 2px solid var(--primary-color);
+}
+
+/* Hero Section */
+.jumbotron {
+  background: linear-gradient(to bottom, #ffffff, var(--primary-color));
+  color: var(--text-color);
+  padding: 6rem 1rem;
+  text-align: center;
+}
+
+.jumbotron-heading {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.display-4 {
+  font-size: 2.5rem;
+}
+
+h2,
+.jumbotron-heading,
+.card-title {
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+/* Portfolio Section */
+#portfolio {
+  background-color: var(--section-bg-color-dark);
+  padding: 4rem 0;
+}
+
+#portfolio .card {
+  transition: transform 0.3s, box-shadow 0.3s;
+  background-color: var(--section-bg-color-light);
+  border: 1px solid var(--border-color);
+  box-shadow: 0px 4px 10px var(--shadow-color); /* Subtle shadow */
+}
+
+#portfolio .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(74, 144, 226, 0.4); /* Slight shadow with blue tint */
+}
+
+#portfolio .card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+#portfolio .card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+#portfolio .card-text {
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+#portfolio .btn-group .btn {
+  margin-right: 0.5rem;
+}
+
+/* Skills Section (Resume Section) */
+#resume .row .col-md-3 {
+  border: 1px solid var(--border-color);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  background-color: var(--section-bg-color-light);
+  box-shadow: 0px 4px 10px var(--shadow-color); /* Subtle shadow */
+}
+
+#resume h3 {
+  font-size: 1.75rem; /* Make the "Skills" heading smaller */
+  font-weight: 600; /* Lighten the font weight to make it less prominent */
+  color: var(--primary-color); /* Use primary color for consistency */
+  margin-bottom: 2rem; /* Add spacing below */
+}
+
+#resume h4 {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+#resume ul {
+  list-style: none;
+  padding: 0;
+}
+
+#resume li {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  transition: background-color 0.3s, transform 0.3s;
+  color: var(--text-color);
+}
+
+.btn-primary:hover {
+  background-color: #377bb5; /* Darker shade on hover */
+  border-color: #377bb5;
+  transform: scale(1.05);
+}
+
+/* Contact Form */
+#contact input[type='text'],
+#contact input[type='email'],
+#contact textarea {
+  background-color: var(--form-bg-color);
+  border: 1px solid var(--primary-color);
+  color: var(--text-color);
+  padding: 0.75rem;
+  width: 100%;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+#contact input[type='text']:focus,
+#contact input[type='email']:focus,
+#contact textarea:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 5px rgba(74, 144, 226, 0.5); /* Blue focus effect */
+}
+
+/* Footer and Social Icons */
+footer {
+  background-color: var(
+    --primary-color
+  ); /* Set the footer background to blue */
+  color: var(--text-color);
+  padding: 2rem 0;
+  text-align: center;
+}
+
+footer a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #fff; /* Lighten text color on hover */
+}
