@@ -8,32 +8,49 @@ A portfolio built with HTML, CSS, and Bootstrap showcasing my work as a Full-Sta
 
 ## Table of Contents <!-- omit in toc -->
 
-- [Technologies Used \*\*\*](#technologies-used-)
-- [Features \*\*\*](#features-)
-  - [Screenshots \*\*\*](#screenshots-)
+- [Technologies Used](#technologies-used)
+- [Features](#features)
+  - [Screenshots](#screenshots)
 - [Links](#links)
 - [Credits](#credits)
 - [License](#license)
 - [Questions](#questions)
 
-## Technologies Used \*\*\*
+## Technologies Used
 
 - HTML
 - CSS
 - Bootstrap
 - Font Awesome
 
-## Features \*\*\*
+## Features
 
----
+- **Header and Home Page**: Displays my name and navigation links to different sections of the portfolio along with a Home page briefly introducing myself.
+- **About Me**: Contains a recent photo and a short bio about me.
+- **Portfolio**: Showcases my recent projects with titles, images, brief descriptions, technologies used, and links to both the deployed applications and their corresponding GitHub repositories.
+- **Resume**: Provides a link to download my resume and a list of my skills in front-end, back-end, tools and technology, and software.
+- **Contact**: Includes a contact form with fields for a name, email address, and message, with validation to ensure all fields are filled out correctly.
+- **Footer**: Contains links to my GitHub, LinkedIn, and Stack Overflow profiles.
 
-### Screenshots \*\*\*
+### Screenshots
 
 The following screenshot demonstrates the application's functionality and appearance:
 
-**Image of Vaughan Knouse's Portfolio:**
+**Home with Header and About Me:**
 
-![Image of Vaughan Knouse's portfolio.](assets/images/user-portfolio-screenshot.png)
+![Image of Home with Header and About Me.](assets/images/portfolio-image-home-header-about-me.png)
+
+**Portfolio with Projects:**
+
+![Image of Portfolio with Projects.](assets/images/portfolio-image-portfolio.png)
+
+**Resume with Skills:**
+
+![Image of Resume with Skills.](assets/images/portfolio-image-resume.png)
+
+**Contact and Footer:**
+
+![Image of Contact with Footer.](assets/images/portfolio-image-contact-footer.png)
 
 ## Links
 
