@@ -1,156 +1,259 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap');
+
 /* General Styles */
 :root {
-  --primary-color: #4a90e2; /* A medium blue for contrast */
-  --text-color: #333; /* Dark text for better readability */
-  --bg-color: #ffffff; /* Light background for the entire page */
-  --section-bg-color-light: #f8f9fa; /* Light background for sections */
-  --section-bg-color-dark: #e9ecef; /* Slightly darker background for sections */
-  --form-bg-color: #ffffff; /* Light background for form elements */
-  --border-color: #ddd; /* Light border color */
-  --shadow-color: rgba(0, 0, 0, 0.1); /* Subtle shadow */
-}
-
-/* Global styles */
-body {
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+  --primary-color: #4a90e2;
+  --text-color: #333;
+  --bg-color: #ffffff;
+  --section-bg-color-light: #f8f9fa;
+  --section-bg-color-dark: #d9dee3;
+  --form-bg-color: #ffffff;
+  --border-color: #ddd;
+  --shadow-color: rgba(0, 0, 0, 0.1);
 }
 
 /* Section Styling */
 section {
   padding: 4rem 0;
-  background-color: var(--section-bg-color-light);
   color: var(--text-color);
-  border-bottom: 1px solid var(--border-color); /* Adds separation between sections */
+  border-bottom: 1px solid var(--border-color);
 }
 
-/* Header */
-header {
-  background-color: var(
-    --primary-color
-  ); /* Set the header background to blue */
-  color: var(--text-color);
-  padding: 2rem 0;
-  text-align: center;
+/* Navbar Styles */
+.navbar {
+  padding: 1rem;
+  transition: all 0.3s ease-in-out;
 }
 
-/* Specific Section Backgrounds */
-#portfolio,
-#contact,
-#resume {
-  background-color: var(--section-bg-color-dark);
-}
-
-#hero {
-  background: linear-gradient(to bottom, #ffffff, var(--primary-color));
-  text-align: center;
-  border-bottom: 2px solid var(--primary-color); /* Distinct separator for Hero */
-  padding: 4rem 1rem; /* Ensure it scales well on smaller devices */
-}
-
-section h2 {
-  font-size: 2.5rem;
+.navbar-dark .navbar-brand {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.75rem;
   font-weight: 700;
-  color: var(--primary-color);
-  margin-bottom: 2rem;
-  text-align: center;
+  color: white;
+  transition: transform 0.3s ease;
 }
 
-/* Make sure active state is applied properly */
-.navbar-nav .nav-link.active {
-  font-weight: bold;
-  border-bottom: 2px solid var(--primary-color);
+.navbar-brand:hover {
+  transform: scale(1.1);
+}
+
+.navbar-brand .logo img {
+  margin-right: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.brand-name {
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Navbar Links */
+.navbar-nav .nav-link {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin: 0 0.5rem;
+  color: #f8f9fa;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .navbar-nav .nav-link:hover {
-  color: var(--primary-color); /* On hover, text becomes blue */
-  transform: scale(1.1); /* Smooth scaling effect */
+  color: var(--primary-color);
+  transform: scale(1.1);
 }
 
-/* Optional: To ensure the active link stands out */
+/* Active Link Indicator */
 .navbar-nav .nav-link.active {
   font-weight: bold;
+  color: var(--primary-color);
   border-bottom: 2px solid var(--primary-color);
 }
 
+/* Sticky Navbar Scroll Effect */
+.navbar.fixed-top.scrolled {
+  background: #343a40 !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
 /* Hero Section */
-.jumbotron {
-  background: linear-gradient(to bottom, #ffffff, var(--primary-color));
-  color: var(--text-color);
-  padding: 6rem 1rem;
+.hero-section {
+  background: linear-gradient(to bottom, #0056b3 70%, #f8f9fa);
+  background-attachment: fixed;
+  color: white;
+  padding: 6rem 2rem;
   text-align: center;
+  animation: fadeIn 2s ease-in;
 }
 
-.jumbotron-heading {
-  font-size: 3rem;
+.hero-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3.5rem;
   font-weight: 700;
+  margin-bottom: 1rem;
 }
 
-.display-4 {
-  font-size: 2.5rem;
+.hero-name {
+  color: #f8f9fa;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-h2,
-.jumbotron-heading,
-.card-title {
-  font-weight: 700;
+.hero-subtitle {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.hero-description {
+  font-size: 1.25rem;
+  color: #e0e0e0;
+  margin-bottom: 2rem;
+}
+
+.hero-buttons .hero-btn {
+  margin: 0.5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.hero-btn:hover {
+  transform: scale(1.1);
+}
+
+.social-icons a {
+  color: white;
+  margin: 0 1rem;
+  transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.3);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* About Section */
+#about h2 {
+  font-family: 'Poppins', sans-serif;
   color: var(--primary-color);
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
 }
 
-/* Portfolio Section */
-#portfolio {
-  background-color: var(--section-bg-color-dark);
+/* Portfolio and Projects Section */
+.projects-section {
+  background: var(--section-bg-color-dark);
   padding: 4rem 0;
 }
 
-#portfolio .card {
-  transition: transform 0.3s, box-shadow 0.3s;
-  background-color: var(--section-bg-color-light);
-  border: 1px solid var(--border-color);
-  box-shadow: 0px 4px 10px var(--shadow-color); /* Subtle shadow */
+.projects-section h2 {
+  font-family: 'Poppins', sans-serif;
+  color: var(--primary-color);
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
 }
 
-#portfolio .card:hover {
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.project-card {
+  background: white;
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex: 1 1 calc(33.333% - 2rem);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+}
+
+.project-card .card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 10px 20px rgba(74, 144, 226, 0.4); /* Slight shadow with blue tint */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-#portfolio .card-img-top {
-  height: 200px;
-  object-fit: cover;
-}
-
-#portfolio .card-title {
-  font-size: 1.25rem;
+.project-card .card-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
   font-weight: bold;
+  color: var(--primary-color);
 }
 
-#portfolio .card-text {
+.project-card .card-text {
   font-size: 1rem;
-  color: #6c757d;
+  margin-bottom: 1rem;
 }
 
-#portfolio .btn-group .btn {
-  margin-right: 0.5rem;
+.btn-outline-primary {
+  transition: all 0.3s ease-in-out;
 }
 
-/* Skills Section (Resume Section) */
+.btn-outline-primary:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* Animation Effects */
+.animate-card {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.6s ease-in-out;
+}
+
+.animate-card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Resume and Skills Section */
+#resume h2 {
+  font-family: 'Poppins', sans-serif;
+  color: var(--primary-color);
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
 #resume .row .col-md-3 {
   border: 1px solid var(--border-color);
   padding: 1.5rem;
   margin-bottom: 1.5rem;
   background-color: var(--section-bg-color-light);
-  box-shadow: 0px 4px 10px var(--shadow-color); /* Subtle shadow */
+  box-shadow: 0px 4px 10px var(--shadow-color);
 }
 
 #resume h3 {
-  font-size: 1.75rem; /* Make the "Skills" heading smaller */
-  font-weight: 600; /* Lighten the font weight to make it less prominent */
-  color: var(--primary-color); /* Use primary color for consistency */
-  margin-bottom: 2rem; /* Add spacing below */
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 2rem;
 }
 
 #resume h4 {
@@ -178,9 +281,28 @@ h2,
 }
 
 .btn-primary:hover {
-  background-color: #377bb5; /* Darker shade on hover */
+  background-color: #377bb5;
   border-color: #377bb5;
   transform: scale(1.05);
+}
+
+/* Contact Section */
+.contact-section {
+  background: var(--section-bg-color-dark);
+}
+
+#contact h2 {
+  font-family: 'Poppins', sans-serif;
+  color: var(--primary-color);
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+#contact h4 {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
 }
 
 /* Contact Form */
@@ -200,14 +322,12 @@ h2,
 #contact input[type='email']:focus,
 #contact textarea:focus {
   border-color: var(--primary-color);
-  box-shadow: 0 0 5px rgba(74, 144, 226, 0.5); /* Blue focus effect */
+  box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
 }
 
 /* Footer and Social Icons */
 footer {
-  background-color: var(
-    --primary-color
-  ); /* Set the footer background to blue */
+  background-color: var(--primary-color);
   color: var(--text-color);
   padding: 2rem 0;
   text-align: center;
@@ -219,5 +339,5 @@ footer a {
 }
 
 footer a:hover {
-  color: #fff; /* Lighten text color on hover */
+  color: #fff;
 }
