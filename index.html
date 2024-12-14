@@ -116,51 +116,39 @@
       </div>
     </section>
 
-    <!-- About Me Section -->
-    <section id="about" class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <img
-            src="./assets/images/VK-image.jpeg"
-            alt="Vaughan Image"
-            class="img-fluid rounded-circle" />
-        </div>
-        <div class="col-md-8">
-          <h2 class="text-center mb-4">About Me</h2>
-          <p>
-            Welcome to my page! I am a full-stack web developer based in
-            Washington, DC, with over 10 years of experience in healthcare
-            operations. My journey in the tech world began after years of
-            working in healthcare, where I developed a passion for improving
-            workflows and patient care through technology.
-          </p>
-          <p>
-            I earned a Full-Stack Web Development certificate from The
-            University of Texas at Austin Coding Boot Camp, where I honed my
-            skills in the MERN stack (MongoDB, Express.js, React.js, Node.js),
-            SQL, and responsive web design. With a strong foundation in
-            front-end and back-end development, I focus on creating
-            user-friendly applications that streamline processes and enhance
-            experiences.
-          </p>
-          <p>
-            Before transitioning into software development, I worked in various
-            healthcare roles, including clinical work as an emergency department
-            medical scribe, research assistant at the NIH's National Cancer
-            Institute, and as part of the administrative team at the NIH's
-            Center for Scientific Review. This diverse experience has given me
-            valuable insight into the unique challenges of the healthcare field
-            and drives my desire to leverage technology to make a meaningful
-            impact.
-          </p>
-          <p>
-            I'm passionate about continuing to learn and grow, and I'm excited
-            about applying my skills to create innovative solutions that improve
-            the healthcare industry. Whether working independently or as part of
-            a team, I bring a collaborative mindset, strong problem-solving
-            skills, and a commitment to delivering high-quality solutions in
-            fast-paced environments.
-          </p>
+    <!-- About Section -->
+    <section id="about" class="about-section py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">About Me</h2>
+        <div class="row align-items-center">
+          <!-- Image Section -->
+          <div class="col-lg-4 text-center">
+            <img
+              src="./assets/images/VK-image.jpeg"
+              alt="Vaughan Knouse"
+              class="img-fluid rounded-circle about-img animate-fade" />
+          </div>
+
+          <!-- Bio Section -->
+          <div class="col-lg-8 about-text animate-fade">
+            <p>
+              Hi! I'm Vaughan Knouse, a passionate Full-Stack Web Developer
+              based in Washington, DC. With over 10 years of experience in
+              healthcare operations, I discovered my passion for improving
+              processes through technology and web development.
+            </p>
+            <p>
+              I earned a Full-Stack Web Development certificate from The
+              University of Texas at Austin, where I specialized in the MERN
+              stack, SQL, and responsive web design. I am driven by building
+              user-friendly applications that solve real-world problems.
+            </p>
+            <p>
+              Whether working independently or as part of a team, I bring a
+              collaborative mindset, problem-solving skills, and a commitment to
+              delivering high-quality solutions.
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -567,70 +555,73 @@
     </div>
 
     <!-- Resume Section -->
-    <section id="resume" class="bg-light py-5">
-      <div class="container text-center">
-        <h2>Resume</h2>
-        <p>
-          Download my resume for a detailed view of my experience and skills.
-        </p>
+    <section id="resume" class="resume-section py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">Resume</h2>
+
         <!-- Resume Download Button -->
-        <a href="./assets/documents/VK_resume.pdf" class="btn btn-primary"
-          >Download Resume</a
-        >
-      </div>
-      <div class="container py-5">
-        <h3 class="text-center">Skills</h3>
-        <div class="row">
-          <!-- Front-End Skills Column -->
-          <div class="col-md-3 border">
-            <h4>Front-End Skills</h4>
-            <ul class="list-unstyled">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-              <li>React.js</li>
-              <li>Handlebars.js</li>
-              <li>Responsive Web Design</li>
-            </ul>
+        <div class="text-center mb-4">
+          <a
+            href="./assets/documents/VK_resume.pdf"
+            class="btn btn-primary btn-lg">
+            <i class="fas fa-file-download"></i> Download Resume
+          </a>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="row g-4">
+          <!-- Front-End Skills -->
+          <div class="col-lg-4 col-md-6 animate-slide">
+            <div class="card skill-card">
+              <div class="card-body">
+                <h4 class="card-title">
+                  <i class="fas fa-code"></i> Front-End Skills
+                </h4>
+                <ul class="list-unstyled">
+                  <li>HTML5</li>
+                  <li>CSS3</li>
+                  <li>JavaScript (ES6+)</li>
+                  <li>React.js</li>
+                  <li>Bootstrap 5</li>
+                </ul>
+              </div>
+            </div>
           </div>
-          <!-- Back-End Skills Column -->
-          <div class="col-md-3 border">
-            <h4>Back-End Skills</h4>
-            <ul class="list-unstyled">
-              <li>Node.js</li>
-              <li>Express.js</li>
-              <li>GraphQL</li>
-              <li>MongoDB</li>
-              <li>Sequelize</li>
-              <li>Mongoose</li>
-              <li>PostgreSQL</li>
-              <li>RESTful APIs</li>
-              <li>OpenWeather API</li>
-            </ul>
+
+          <!-- Back-End Skills -->
+          <div class="col-lg-4 col-md-6 animate-slide">
+            <div class="card skill-card">
+              <div class="card-body">
+                <h4 class="card-title">
+                  <i class="fas fa-server"></i> Back-End Skills
+                </h4>
+                <ul class="list-unstyled">
+                  <li>Node.js</li>
+                  <li>Express.js</li>
+                  <li>MongoDB</li>
+                  <li>PostgreSQL</li>
+                  <li>GraphQL</li>
+                </ul>
+              </div>
+            </div>
           </div>
-          <!-- Tools & Platform Skills Column -->
-          <div class="col-md-3 border">
-            <h4>Tools & Platform Skills</h4>
-            <ul class="list-unstyled">
-              <li>Version Control/Git</li>
-              <li>GitHub</li>
-              <li>Chrome DevTools</li>
-              <li>Visual Studio (VS) Code</li>
-              <li>Insomnia</li>
-              <li>Render</li>
-              <li>JWT</li>
-            </ul>
-          </div>
-          <!-- Software Skills Column -->
-          <div class="col-md-3 border">
-            <h4>Software Skills</h4>
-            <ul class="list-unstyled">
-              <li>EMR Systems: Epic, CRIS, PACS</li>
-              <li>Microsoft Office Suite</li>
-              <li>SharePoint</li>
-              <li>IMPAC</li>
-              <li>NIDAP</li>
-            </ul>
+
+          <!-- Tools & Platforms -->
+          <div class="col-lg-4 col-md-6 animate-slide">
+            <div class="card skill-card">
+              <div class="card-body">
+                <h4 class="card-title">
+                  <i class="fas fa-tools"></i> Tools & Platforms
+                </h4>
+                <ul class="list-unstyled">
+                  <li>Git & GitHub</li>
+                  <li>VS Code</li>
+                  <li>Chrome DevTools</li>
+                  <li>Insomnia</li>
+                  <li>Heroku & Render</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -639,48 +630,58 @@
     <!-- Contact Section -->
     <section id="contact" class="contact-section py-5">
       <div class="container">
-        <h2 class="text-center">Contact Me</h2>
-        <div class="row">
-          <div class="col-md-6">
-            <h4><strong>Get in Touch</strong></h4>
-            <p>
-              Please feel free to contact me at
-              <a href="mailto:vaughanknouse@gmail.com"
-                >vaughanknouse@gmail.com</a
-              >
-              if you have any questions or comments.
-            </p>
-          </div>
-          <div class="col-md-6">
-            <!-- Contact Form -->
-            <form>
-              <div class="row g-3">
-                <div class="col-md-12">
-                  <label for="name" class="form-label">Name</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="name"
-                    placeholder="Name" />
-                </div>
-                <div class="col-md-12">
-                  <label for="email" class="form-label">Email</label>
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="email"
-                    placeholder="Email" />
-                </div>
+        <h2 class="text-center mb-5">Get in Touch</h2>
+
+        <!-- Email Display -->
+        <div class="text-center mb-4">
+          <p class="lead">
+            Feel free to contact me with any questions or comments at:
+            <a href="mailto:vaughanknouse@gmail.com" class="email-link"
+              >vaughanknouse@gmail.com</a
+            >
+          </p>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <form id="contactForm">
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Your Name"
+                  required />
+                <small class="text-danger" id="nameError"></small>
               </div>
+
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Your Email"
+                  required />
+                <small class="text-danger" id="emailError"></small>
+              </div>
+
               <div class="mb-3">
                 <label for="message" class="form-label">Message</label>
                 <textarea
                   class="form-control"
                   id="message"
-                  placeholder="Message"
-                  rows="3"></textarea>
+                  rows="5"
+                  placeholder="Your Message"
+                  required></textarea>
+                <small class="text-danger" id="messageError"></small>
               </div>
-              <button type="submit" class="btn btn-primary">Send</button>
+
+              <button type="submit" class="btn btn-primary btn-lg">
+                Send Message
+              </button>
             </form>
           </div>
         </div>
@@ -688,28 +689,29 @@
     </section>
 
     <!-- Footer -->
-    <footer class="text-center py-4">
+    <footer class="footer-section text-center py-4">
       <p>
         &copy; <span id="current-year"></span> Vaughan Knouse. All rights
         reserved.
       </p>
+
       <ul class="list-inline">
         <li class="list-inline-item">
-          <a href="https://github.com/vaughanknouse" target="_blank">
-            <i class="fab fa-github"></i> GitHub
-          </a>
+          <a href="https://github.com/vaughanknouse" target="_blank"
+            ><i class="fab fa-github"></i> GitHub</a
+          >
         </li>
         <li class="list-inline-item">
-          <a href="https://www.linkedin.com/in/vaughanknouse/" target="_blank">
-            <i class="fab fa-linkedin"></i> LinkedIn
-          </a>
+          <a href="https://www.linkedin.com/in/vaughanknouse/" target="_blank"
+            ><i class="fab fa-linkedin"></i> LinkedIn</a
+          >
         </li>
         <li class="list-inline-item">
           <a
             href="https://stackoverflow.com/users/25171022/vaughan-knouse"
-            target="_blank">
-            <i class="fab fa-stack-overflow"></i> Stack Overflow
-          </a>
+            target="_blank"
+            ><i class="fab fa-stack-overflow"></i> Stack Overflow</a
+          >
         </li>
       </ul>
     </footer>
