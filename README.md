@@ -4,7 +4,7 @@
 
 ## Description <!-- omit in toc -->
 
-A portfolio built with HTML, CSS, and Bootstrap showcasing my work as a Full-Stack Web Developer, featuring projects built with modern web technologies, a responsive design, and a user-friendly interface.
+A portfolio built with HTML, CSS, Bootstrap, and JavaScript showcasing my work as a Full-Stack Web Developer, featuring projects built with modern web technologies, a responsive design, and a user-friendly interface.
 
 This portfolio website is designed to give an in-depth look at my skills, experience, and past projects. The site is structured with a clean, modern aesthetic, featuring a responsive design to provide an optimal viewing experience across various devices. Each section of the website provides valuable information for prospective clients, collaborators, or employers, showcasing my skills in front-end and back-end development, my proficiency with development tools, and my experience in the healthcare sector.
 
@@ -19,7 +19,7 @@ The project follows a modular approach, with each section clearly defined and st
   - [Resume Section](#resume-section)
   - [Contact Section](#contact-section)
 - [Installation and Setup](#installation-and-setup)
-  - [Screenshots](#screenshots)
+  - [Screenshots \*\*\*](#screenshots-)
 - [Links](#links)
 - [Credits](#credits)
 - [License](#license)
@@ -33,6 +33,7 @@ The project follows a modular approach, with each section clearly defined and st
 - **Bootstrap 5**: Framework for responsive design, including grid layout, components, and utilities.
 - **JavaScript**: Used for dynamic content, form handling, and interactive elements.
 - **Font Awesome**: Icon library used for social media icons and other symbols throughout the site.
+- **Google Fonts**: A library of free and open-source web fonts that you can easily integrate into your web projects for custom typography.
 
 ## Features
 
@@ -68,22 +69,21 @@ The project follows a modular approach, with each section clearly defined and st
 
 1. **Clone the Repository**:
 
-```bash
-git clone https://github.com/vaughanknouse/Vaughan-portfolio.git
-cd Vaughan-portfolio
-```
+   ```bash
+   git clone https://github.com/vaughanknouse/vaughan-portfolio.git
+   cd Vaughan-portfolio
+   ```
 
 2. **Open the HTML File**: Simply open the index.html file in your preferred browser to view the site.
 3. **Customize (Optional)**: Update paths, colors, or any content as desired.
 4. **Deploy**: You can deploy the site on platforms like GitHub Pages, Netlify, or Render.
 
-### Screenshots
+### Screenshots \*\*\*
 
 The following screenshot demonstrates the application's functionality and appearance:
 
-**Home with Header and About Me:**
-
-![Image of Home with Header and About Me.](assets/images/portfolio-image-home-header-about-me.png)
+\*\*Homepage with Navigation and About Me Page:
+![Image of Homepage with Header and About Me.](assets/images/portfolio-image-home-header-about-me.png)
 
 **Portfolio with Projects:**
 
@@ -99,9 +99,9 @@ The following screenshot demonstrates the application's functionality and appear
 
 ## Links
 
-GitHub Repository: <https://github.com/vaughanknouse/Vaughan-portfolio>
+GitHub Repository: <https://github.com/vaughanknouse/vaughan-portfolio>
 
-Deployed Application Link: <https://vaughanknouse.github.io/Vaughan-portfolio/>
+Deployed Application Link: <https://vaughanknouse.github.io/vaughan-portfolio/>
 
 ## Credits
 
@@ -110,6 +110,10 @@ Deployed Application Link: <https://vaughanknouse.github.io/Vaughan-portfolio/>
 [Bootstrap](https://getbootstrap.com/)
 
 [Font Awesome](https://fontawesome.com/icons/link?s=solid)
+
+[Favicon.ico](https://favicon.io/)
+
+[Google Fonts](https://fonts.google.com/)
 
 ## License
 
