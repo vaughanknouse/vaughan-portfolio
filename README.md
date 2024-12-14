@@ -82,7 +82,7 @@ The project follows a modular approach, with each section clearly defined and st
 
 The following screenshot demonstrates the application's functionality and appearance:
 
-\*\*Homepage with Navigation and About Me Page:
+**Homepage with Navigation and About Me Page:**
 ![Image of Homepage with Header and About Me.](assets/images/portfolio-image-home-header-about-me.png)
 
 **Portfolio with Projects:**
