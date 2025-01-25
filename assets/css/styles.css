@@ -8,7 +8,7 @@
   --text-color: #333333; /* Dark Gray for readability */
   --light-text-color: #6c757d; /* Subtext/Muted */
   --background-light: #ffffff; /* Light Section Background */
-  --background-dark: #f8f9fa; /* Darker Gray Background */
+  --background-dark: #d6d8db; /* Darker Gray Background */
   --border-color: #e9ecef; /* Borders */
   --button-hover: #003f88; /* Button Hover */
   --shadow-color: rgba(0, 0, 0, 0.1); /* Box Shadow */
@@ -34,20 +34,6 @@ h6 {
   color: var(--primary-color);
 }
 
-/* Buttons */
-.btn-primary {
-  background: var(--primary-color);
-  color: white;
-  border: none;
-  padding: 0.75rem 1.5rem;
-  transition: background 0.3s, transform 0.2s;
-}
-
-.btn-primary:hover {
-  background: var(--button-hover);
-  transform: scale(1.05);
-}
-
 /* Links */
 a {
   color: var(--primary-color);
@@ -70,33 +56,6 @@ a:hover {
 .form-control:focus {
   border-color: var(--primary-color);
   box-shadow: 0 0 5px rgba(0, 86, 179, 0.5);
-}
-
-/* Section Backgrounds */
-.hero-section {
-  background: linear-gradient(
-    to bottom,
-    var(--primary-color),
-    var(--background-light)
-  );
-}
-
-.about-section {
-  background: var(--background-dark);
-}
-
-.projects-section,
-.contact-section {
-  background: var(--background-light);
-}
-
-.resume-section {
-  background: var(--background-dark);
-}
-
-.footer-section {
-  background: var(--primary-color);
-  color: white;
 }
 
 /* Navbar Styles */
@@ -146,7 +105,6 @@ a:hover {
 .navbar-nav .nav-link.active {
   font-weight: bold;
   color: var(--primary-color);
-  border-bottom: 2px solid var(--primary-color);
 }
 
 /* Sticky Navbar Scroll Effect */
@@ -157,7 +115,11 @@ a:hover {
 
 /* Hero Section */
 .hero-section {
-  background: linear-gradient(to bottom, #0056b3 70%, #f8f9fa);
+  background: linear-gradient(
+    to bottom,
+    var(--primary-color),
+    var(--background-light)
+  );
   background-attachment: fixed;
   color: white;
   padding: 6rem 2rem;
@@ -222,7 +184,7 @@ a:hover {
 
 /* About Section */
 .about-section {
-  background: var(--section-bg-color-light);
+  background: var(--background-light);
   padding: 4rem 0;
 }
 
@@ -276,7 +238,7 @@ a:hover {
 
 /* Portfolio and Projects Section */
 .projects-section {
-  background: var(--section-bg-color-dark);
+  background-color: var(--background-dark);
   padding: 4rem 0;
 }
 
@@ -357,7 +319,7 @@ a:hover {
 
 /* Resume Section */
 .resume-section {
-  background: var(--section-bg-color-light);
+  background-color: var(--background-light);
   padding: 4rem 0;
 }
 
@@ -401,19 +363,6 @@ a:hover {
   margin-bottom: 0.5rem;
 }
 
-/* Resume Download Button */
-.btn-lg {
-  font-size: 1.25rem;
-  padding: 0.75rem 1.5rem;
-  transition: background-color 0.3s, transform 0.2s ease-in-out;
-}
-
-.btn-lg:hover {
-  transform: scale(1.05);
-  background: var(--primary-color);
-  color: white;
-}
-
 /* Scroll Animations */
 .animate-slide {
   opacity: 0;
@@ -428,21 +377,21 @@ a:hover {
 
 /* Buttons */
 .btn-primary {
-  background-color: var(--primary-color);
-  border-color: var(--primary-color);
-  transition: background-color 0.3s, transform 0.3s;
-  color: var(--text-color);
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  transition: background 0.3s, transform 0.2s;
 }
 
 .btn-primary:hover {
-  background-color: #377bb5;
-  border-color: #377bb5;
+  background: var(--button-hover);
   transform: scale(1.05);
 }
 
 /* Contact Section */
 .contact-section {
-  background: var(--section-bg-color-dark);
+  background-color: var(--background-dark);
   padding: 4rem 0;
 }
 
@@ -456,25 +405,6 @@ a:hover {
 
 .contact-section .form-label {
   font-weight: bold;
-}
-
-.contact-section .form-control {
-  font-size: 1rem;
-  padding: 0.75rem;
-  margin-bottom: 0.5rem;
-  border: 1px solid var(--border-color);
-}
-
-.contact-section .btn-primary {
-  font-size: 1.25rem;
-  padding: 0.75rem 1.5rem;
-  transition: background-color 0.3s ease, transform 0.2s ease-in-out;
-}
-
-.contact-section .btn-primary:hover {
-  background: var(--primary-color);
-  color: white;
-  transform: scale(1.05);
 }
 
 .contact-section .email-link {
@@ -507,10 +437,10 @@ a:hover {
 
 /* Footer */
 .footer-section {
-  background: var(--primary-color);
+  background: #343a40;
   color: white;
-  padding: 2rem 0;
-  text-align: center;
+  padding: 1rem;
+  transition: all 0.3s ease-in-out;
 }
 
 .footer-section p {
@@ -529,10 +459,13 @@ a:hover {
 
 .footer-section a {
   color: white;
-  font-size: 1.1rem;
+  font-size: 1rem;
   text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .footer-section a:hover {
+  color: var(--secondary-color);
   text-decoration: underline;
+  transform: scale(1.1);
 }
