@@ -32,9 +32,17 @@
             alt="Logo"
             width="40"
             height="40"
-            class="d-inline-block align-text-top" />
+            class="d-inline-block align-text-top"
+            loading="lazy" />
           <span class="brand-name">Vaughan Knouse</span>
         </a>
+        <!-- Dark Mode and Light Mode Switch Toggle Button -->
+        <button
+          aria-label="Toggle Dark Mode"
+          id="theme-toggle"
+          class="btn btn-secondary">
+          <i class="fas fa-moon"></i>
+        </button>
 
         <!-- Mobile Menu Toggle -->
         <button
@@ -77,7 +85,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero-section text-center">
+    <section id="home" class="hero-section">
       <div class="container">
         <h1 class="hero-title">
           Hello, I'm <br />
@@ -88,30 +96,31 @@
           Welcome to my portfolio! Explore my work, learn more about me, or get
           in touch. Let's build something amazing together!
         </p>
-
         <!-- Call-to-Actions -->
         <div class="hero-buttons">
-          <a href="#resume" class="btn btn-primary btn-lg hero-btn"
-            >View Resume</a
-          >
-          <a href="#contact" class="btn btn-outline-light btn-lg hero-btn"
-            >Contact Me</a
-          >
+          <a href="#resume" class="btn btn-primary">View Resume</a>
+          <a href="#contact" class="btn btn-primary">Contact Me</a>
         </div>
-
         <!-- Social Media Links -->
         <div class="social-icons">
-          <a href="https://github.com/vaughanknouse" target="_blank"
-            ><i class="fab fa-github fa-2x"></i
-          ></a>
-          <a href="https://www.linkedin.com/in/vaughanknouse/" target="_blank"
-            ><i class="fab fa-linkedin fa-2x"></i
-          ></a>
+          <a
+            href="https://github.com/vaughanknouse"
+            target="_blank"
+            aria-label="GitHub">
+            <i class="fab fa-github fa-2x"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/vaughanknouse/"
+            target="_blank"
+            aria-label="LinkedIn">
+            <i class="fab fa-linkedin fa-2x"></i>
+          </a>
           <a
             href="https://stackoverflow.com/users/25171022/vaughan-knouse"
             target="_blank"
-            ><i class="fab fa-stack-overflow fa-2x"></i
-          ></a>
+            aria-label="Stack Overflow">
+            <i class="fab fa-stack-overflow fa-2x"></i>
+          </a>
         </div>
       </div>
     </section>
@@ -125,8 +134,9 @@
           <div class="col-lg-4 text-center">
             <img
               src="./assets/images/VK-image.jpeg"
-              alt="Vaughan Knouse"
-              class="img-fluid rounded-circle about-img animate-fade" />
+              alt="Vaughan Knouse, Full-Stack Web Developer"
+              class="img-fluid rounded-circle about-img animate-fade"
+              loading="lazy" />
           </div>
 
           <!-- Bio Section -->
@@ -165,7 +175,8 @@
               <img
                 src="./assets/images/gitfit.png"
                 class="card-img-top"
-                alt="GitFit" />
+                alt="GitFit"
+                loading="lazy" />
               <div class="card-body">
                 <h5 class="card-title">GitFit</h5>
                 <p class="card-text">
@@ -188,7 +199,8 @@
               <img
                 src="./assets/images/weather-dashboard-image.png"
                 class="card-img-top"
-                alt="Weather Dashboard" />
+                alt="Weather Dashboard"
+                loading="lazy" />
               <div class="card-body">
                 <h5 class="card-title">Weather Dashboard</h5>
                 <p class="card-text">
@@ -211,7 +223,8 @@
               <img
                 src="./assets/images/MVC-Tech-Blog-Homepage-image.png"
                 class="card-img-top"
-                alt="MVC Tech Blog" />
+                alt="MVC Tech Blog"
+                loading="lazy" />
               <div class="card-body">
                 <h5 class="card-title">MVC Tech Blog</h5>
                 <p class="card-text">
@@ -233,7 +246,8 @@
               <img
                 src="./assets/images/Web-API-personal-blog-light-image.png"
                 class="card-img-top"
-                alt="Personal Blog" />
+                alt="Personal Blog"
+                loading="lazy" />
               <div class="card-body">
                 <h5 class="card-title">Personal Blog</h5>
                 <p class="card-text">
@@ -255,7 +269,8 @@
               <img
                 src="./assets/images/SQL-employee-tracker-gif.gif"
                 class="card-img-top"
-                alt="SQL Employee Tracker" />
+                alt="SQL Employee Tracker"
+                loading="lazy" />
               <div class="card-body">
                 <h5 class="card-title">SQL Employee Tracker</h5>
                 <p class="card-text">
@@ -277,7 +292,8 @@
               <img
                 src="./assets/images/Social-Network-API-gif.gif"
                 class="card-img-top"
-                alt="Social Network API" />
+                alt="Social Network API"
+                loading="lazy" />
               <div class="card-body">
                 <h5 class="card-title">Social Network API</h5>
                 <p class="card-text">
@@ -299,11 +315,16 @@
 
     <!-- Modals for Projects -->
     <!-- Modal Project 1 -->
-    <div class="modal fade" id="projectModal1" tabindex="-1" aria-hidden="true">
+    <div
+      class="modal fade"
+      id="projectModal1"
+      tabindex="-1"
+      aria-labelledby="modalTitle1"
+      aria-hidden="true">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title">GitFit</h5>
+            <h5 id="modalTitle1" class="modal-title">GitFit</h5>
             <button
               type="button"
               class="btn-close"
@@ -313,7 +334,8 @@
             <img
               src="./assets/images/gitfit.png"
               class="img-fluid mb-3"
-              alt="GitFit Image" />
+              alt="GitFit Image"
+              loading="lazy" />
             <p>
               GitFit is a full-stack user-friendly and responsive fitness
               application built using the MERN stack in collaboration with 3
@@ -343,11 +365,16 @@
     </div>
 
     <!-- Modal Project 2 -->
-    <div class="modal fade" id="projectModal2" tabindex="-1" aria-hidden="true">
+    <div
+      class="modal fade"
+      id="projectModal2"
+      tabindex="-1"
+      aria-labelledby="modalTitle2"
+      aria-hidden="true">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title">Weather Dashboard</h5>
+            <h5 id="modalTitle2" class="modal-title">Weather Dashboard</h5>
             <button
               type="button"
               class="btn-close"
@@ -357,7 +384,8 @@
             <img
               src="./assets/images/weather-dashboard-image.png"
               class="img-fluid mb-3"
-              alt="Weather Dashboard Image" />
+              alt="Weather Dashboard Image"
+              loading="lazy" />
             <p>
               The Weather Dashboard is a dynamic web application that allows
               users to search for cities and view current and 5-day weather
@@ -386,11 +414,16 @@
     </div>
 
     <!-- Modal Project 3 -->
-    <div class="modal fade" id="projectModal3" tabindex="-1" aria-hidden="true">
+    <div
+      class="modal fade"
+      id="projectModal3"
+      tabindex="-1"
+      aria-labelledby="modalTitle3"
+      aria-hidden="true">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title">MVC Tech Blog</h5>
+            <h5 id="modalTitle3" class="modal-title">MVC Tech Blog</h5>
             <button
               type="button"
               class="btn-close"
@@ -400,7 +433,8 @@
             <img
               src="./assets/images/MVC-Tech-Blog-Homepage-image.png"
               class="img-fluid mb-3"
-              alt="MVC Tech Blog Image" />
+              alt="MVC Tech Blog Image"
+              loading="lazy" />
             <p>
               The MVC Tech Blog is a CMS-style platform designed for developers
               to create, edit, and comment on blog posts, structured around the
@@ -429,11 +463,16 @@
     </div>
 
     <!-- Modal Project 4 -->
-    <div class="modal fade" id="projectModal4" tabindex="-1" aria-hidden="true">
+    <div
+      class="modal fade"
+      id="projectModal4"
+      tabindex="-1"
+      aria-labelledby="modalTitle4"
+      aria-hidden="true">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title">Web API Personal Blog</h5>
+            <h5 id="modalTitle4" class="modal-title">Web API Personal Blog</h5>
             <button
               type="button"
               class="btn-close"
@@ -443,7 +482,8 @@
             <img
               src="./assets/images/Web-API-personal-blog-light-image.png"
               class="img-fluid mb-3"
-              alt="Personal Blog Image" />
+              alt="Personal Blog Image"
+              loading="lazy" />
             <p>
               The Web API Personal Blog is a dynamic two-page web application
               that allows users to create, store, and view blog posts with
@@ -471,11 +511,16 @@
     </div>
 
     <!-- Modal Project 5 -->
-    <div class="modal fade" id="projectModal5" tabindex="-1" aria-hidden="true">
+    <div
+      class="modal fade"
+      id="projectModal5"
+      tabindex="-1"
+      aria-labelledby="modalTitle5"
+      aria-hidden="true">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title">SQL Employee Tracker</h5>
+            <h5 id="modalTitle5" class="modal-title">SQL Employee Tracker</h5>
             <button
               type="button"
               class="btn-close"
@@ -485,7 +530,8 @@
             <img
               src="./assets/images/SQL-employee-tracker-gif.gif"
               class="img-fluid mb-3"
-              alt="SQL Employee Tracker GIF" />
+              alt="SQL Employee Tracker GIF"
+              loading="lazy" />
             <p>
               The SQL Employee Tracker is a command-line application that
               enables business owners to manage and organize employee data,
@@ -513,11 +559,16 @@
     </div>
 
     <!-- Modal Project 6 -->
-    <div class="modal fade" id="projectModal6" tabindex="-1" aria-hidden="true">
+    <div
+      class="modal fade"
+      id="projectModal6"
+      tabindex="-1"
+      aria-labelledby="modalTitle6"
+      aria-hidden="true">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title">Social Network API</h5>
+            <h5 id="modalTitle6" class="modal-title">Social Network API</h5>
             <button
               type="button"
               class="btn-close"
@@ -527,7 +578,8 @@
             <img
               src="./assets/images/Social-Network-API-gif.gif"
               class="img-fluid mb-3"
-              alt="Social Network API GIF" />
+              alt="Social Network API GIF"
+              loading="lazy" />
             <p>
               The Social Network API is a backend API for a social media
               platform where users can share thoughts, react to friends' posts,
@@ -695,12 +747,18 @@
 
       <ul class="list-inline">
         <li class="list-inline-item">
-          <a href="https://github.com/vaughanknouse" target="_blank"
+          <a
+            href="https://github.com/vaughanknouse"
+            target="_blank"
+            aria-label="GitHub"
             ><i class="fab fa-github"></i> GitHub</a
           >
         </li>
         <li class="list-inline-item">
-          <a href="https://www.linkedin.com/in/vaughanknouse/" target="_blank"
+          <a
+            href="https://www.linkedin.com/in/vaughanknouse/"
+            target="_blank"
+            aria-label="LinkedIn"
             ><i class="fab fa-linkedin"></i> LinkedIn</a
           >
         </li>
@@ -708,6 +766,7 @@
           <a
             href="https://stackoverflow.com/users/25171022/vaughan-knouse"
             target="_blank"
+            aria-label="Stack Overflow"
             ><i class="fab fa-stack-overflow"></i> Stack Overflow</a
           >
         </li>
@@ -730,6 +789,6 @@
     </script>
 
     <!-- Custom JS -->
-    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/script.js" defer></script>
   </body>
 </html>
