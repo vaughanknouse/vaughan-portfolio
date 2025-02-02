@@ -546,12 +546,14 @@ p {
   transform: translateY(0);
 }
 
-/* Light Mode Styles  */
+/* Light Mode Styles */
 body.light-mode {
   --body-color: hsl(0, 0%, 98%); /* Light background */
   --container-color: hsl(0, 0%, 100%); /* White container */
   --title-color: hsl(228, 15%, 20%); /* Dark text */
   --text-color: hsl(228, 8%, 45%); /* Muted text */
+  --first-color: hsl(210, 100%, 40%); /* Primary color */
+  --first-color-alt: hsl(210, 56%, 35%); /* Primary color alt */
 }
 
 /* Light Mode Navbar Styles */
